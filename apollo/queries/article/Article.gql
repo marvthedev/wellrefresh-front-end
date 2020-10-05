@@ -1,0 +1,14 @@
+query Article ($slug: String) {
+  articles (where: {slug: $slug}, limit: 10, sort: "created_at:desc") {
+    id
+    slug
+    title
+    excerpt
+    content
+    created_at
+    image {
+      url
+    }
+    published_on
+  }
+}

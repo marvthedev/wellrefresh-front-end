@@ -1,0 +1,20 @@
+query getFeatured1($slug: String) {
+  category(id: 4) {
+    articles(where: { slug: $slug }) {
+      id
+      slug
+      title
+      content
+      excerpt
+      created_at
+      image {
+        url
+      }
+      created_by {
+        username
+      }
+    }
+    name
+    id
+  }
+}

@@ -1,0 +1,19 @@
+query getFitnessArticles($slug: String) {
+  category(id: 1) {
+    articles(where: { slug: $slug }, limit: 4, sort: "created_at:desc") {
+      id
+      slug
+      title
+      content
+      created_at
+      image {
+        url
+      }
+      created_by {
+        username
+      }
+    }
+    name
+    id
+  }
+}
