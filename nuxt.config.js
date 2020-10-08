@@ -78,7 +78,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "http://178.128.230.76/graphql"
+        httpEndpoint: process.env.BACKEND_URL || "https://178.128.230.76/graphql"
       }
     }
   },
@@ -109,6 +109,7 @@ export default {
   },
 
   server: {
-    port: 3000 // default: 3000
+    port: 8080, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 };
