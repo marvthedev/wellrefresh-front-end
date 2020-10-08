@@ -9,7 +9,7 @@
       >
         <div class="article__categories-item-img-bg">
           <img
-            :src="api_url + article.image.url"
+            :src="article.image.url"
             class="article__categories-item-img"
           />
         </div>
