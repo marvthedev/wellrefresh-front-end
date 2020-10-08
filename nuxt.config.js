@@ -2,7 +2,7 @@ import { TRUE } from "node-sass";
 
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "https://admin.wellrefresh.com"
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337"
   },
   /*
    ** Headers of the page
@@ -78,7 +78,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "https://178.128.230.76/graphql"
+        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
       }
     }
   },
@@ -109,7 +109,7 @@ export default {
   },
 
   server: {
-    port: 80, // default: 3000
-    host: '0.0.0.0' // default: localhost
+    port: 3000, // default: 3000
+    host: 'localhost' // default: localhost
   }
 };

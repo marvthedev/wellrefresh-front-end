@@ -28,7 +28,7 @@
     flex-direction: column;
     grid-template-columns: 1fr;
     overflow: hidden;
-    row-gap: 3rem;
+    grid-gap: 3rem;
   }
   &-item {
     display: flex;
