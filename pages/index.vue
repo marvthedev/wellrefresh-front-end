@@ -14,7 +14,6 @@ import Categories from "@/components/Categories";
 import Articles from "@/components/TheArticles";
 import Newsletter from "@/components/Newsletter";
 import ArticleCategories from "@/components/TheArticleCategories";
-import articlesQuery from "~/apollo/queries/article/Articles";
 
 export default {
   components: {

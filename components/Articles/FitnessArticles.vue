@@ -16,7 +16,7 @@
         <h3 class="article__categories-item-title">
           {{ article.title }}
         </h3>
-        <p class="article__categories-item-author">By {{ article.created_by.username }}</p>
+        <p class="article__categories-item-author">By {{ article.author.username }}</p>
       </div>
     </nuxt-link>
   </div>

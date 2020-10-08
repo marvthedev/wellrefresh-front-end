@@ -9,7 +9,7 @@ query getFitnessArticles($slug: String) {
       image {
         url
       }
-      created_by {
+      author {
         username
       }
     }

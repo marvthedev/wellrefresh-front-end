@@ -7,11 +7,11 @@ query getFeatured1($slug: String) {
       content
       excerpt
       created_at
+      author {
+        username
+      }
       image {
         url
-      }
-      created_by {
-        username
       }
     }
     name

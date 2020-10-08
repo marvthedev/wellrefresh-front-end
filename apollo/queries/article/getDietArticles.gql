@@ -1,6 +1,6 @@
 query getFitnessArticles($slug: String) {
   category(id: 3) {
-    articles(where: { slug: $slug }, limit: 4, sort: "created_at:desc") {
+    articles(where: { slug: $slug }, limit: 4) {
       id
       slug
       title
@@ -9,7 +9,7 @@ query getFitnessArticles($slug: String) {
       image {
         url
       }
-      created_by {
+      author {
         username
       }
     }
