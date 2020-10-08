@@ -8,7 +8,7 @@
       class="article__categories-item"
     >
       <div class="article__categories-item-img-bg">
-        <img src="{{ article.image.url }}"
+        <img src= {{ article.image.url }}
           class="article__categories-item-img"
         />
       </div>
