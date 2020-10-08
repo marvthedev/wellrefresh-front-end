@@ -2,7 +2,7 @@ import { TRUE } from "node-sass";
 
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "http://0.0.0.0:80/"
+    strapiBaseUri: process.env.API_URL || "https://178.128.230.76/"
   },
   /*
    ** Headers of the page
