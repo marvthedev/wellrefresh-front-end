@@ -2,7 +2,7 @@ import { TRUE } from "node-sass";
 
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "https://178.128.230.76/"
+    strapiBaseUri: process.env.API_URL || "https://admin.wellrefresh.com"
   },
   /*
    ** Headers of the page
@@ -109,7 +109,7 @@ export default {
   },
 
   server: {
-    port: 8080, // default: 3000
+    port: 80, // default: 3000
     host: '0.0.0.0' // default: localhost
   }
 };
