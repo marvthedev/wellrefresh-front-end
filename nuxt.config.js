@@ -2,7 +2,7 @@ import { TRUE } from "node-sass";
 
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "http://localhost:1337/"
+    strapiBaseUri: process.env.API_URL || "http://0.0.0.0:80/"
   },
   /*
    ** Headers of the page
@@ -78,7 +78,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+        httpEndpoint: process.env.BACKEND_URL || "https://178.128.230.76/graphql"
       }
     }
   },
@@ -109,7 +109,7 @@ export default {
   },
 
   server: {
-    port: 3000, // default: 3000
-    host: 'localhost' // default: localhost
+    port: 8080, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 };

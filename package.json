@@ -20,6 +20,7 @@
     "graphql-tag": "^2.11.0",
     "markdown-it-style": "^1.0.0",
     "marked": "^1.2.0",
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.14.6",
     "nuxt-mq": "^2.0.1",
     "sass-loader": "^10.0.2",
