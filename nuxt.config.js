@@ -18,12 +18,19 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }],
     link: [
       {
         rel: "stylesheet",
         href:
-        "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+          "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      }
+    ],
+    script: [
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        "data-ad-client": "ca-pub-2768317130784894",
+        async: true
       }
     ]
   },
@@ -70,7 +77,6 @@ export default {
     ]
   ],
   markdownit: {
-    
     injected: true,
     linkify: true,
     breaks: true
@@ -109,6 +115,6 @@ export default {
   },
 
   server: {
-    port: 80, // default: 3000
-  },
+    port: 3000 // default: 3000
+  }
 };
