@@ -14,7 +14,7 @@
     <div class="article__article-container">
       <div class="article__article">
         <img
-          src="../assets/images/ultimate guide-weight-loss.jpg"
+          src="https://wellrefresh-strapi-upload.s3.ca-central-1.amazonaws.com/ultimate_guide_weight_loss_a3c4af804a.jpg"
           class="article__article-img"
         />
 
@@ -24,7 +24,7 @@
       </div>
       <div class="article__article">
         <img
-          src="../assets/images/how-to-lose-face-fat.jpg"
+          src="https://wellrefresh-strapi-upload.s3.ca-central-1.amazonaws.com/How_to_Lose_Facial_Fat_1_f86d888c3a.jpg"
           class="article__article-img"
         />
         <h3 class="article__article-title">Do this to Lose Face Fat</h3>
