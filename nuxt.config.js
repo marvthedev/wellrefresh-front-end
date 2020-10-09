@@ -116,6 +116,6 @@ export default {
   },
 
   server: {
-    port: 3000 // default: 3000
+    port: 80 // default: 3000
   }
 };
