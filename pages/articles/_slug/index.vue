@@ -1,18 +1,21 @@
 <template>
+<div class="article__flex">
   <article class="article">
-    <div class="article__container">
-      <!-- <img :src="api_url + articles.image.url" class="article__img" /> -->
       <h1 class="article__title">{{ articles.title }}</h1>
+      <!-- <img :src="api_url + articles.image.url" class="article__img" /> -->
       <div
         id="article__font"
         class="article__content"
         v-html="articles.content"
       ></div>
       <div class="article__side-bar">
-        <p><img src="~/assets/images/ad.png" alt="" /></p>
+        <img
+          src="~/assets/images/dummy-ad.jpg"
+          class="article__side-bar-img"
+        />
       </div>
-    </div>
   </article>
+</div>
 </template>
 
 <script>
@@ -23,7 +26,7 @@ export default {
     return {
       articles: [],
       query: "",
-      api_url: process.env.strapiBaseUri
+      api_url: process.env.strapiBaseUri,
     };
   },
   // data: () => ({
@@ -43,34 +46,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-  color: red;
-}
 .article {
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 3rem;
   display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
   &__title {
-    margin-top: 1rem;
-    font-size: 3rem;
-  }
-  &__img {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-  }
-  &__content {
-    margin-top: 3rem;
+    font-weight: 900;
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
   }
   &__side-bar {
     display: none;
   }
+  
 }
 //Desktop media queries
 @media (min-width: 78rem) {
+  .article__flex {
+    display: flex;
+  }
   .article {
-    margin-top: 12rem;
+    padding: 0 15rem;
+    display: grid;
+    grid-template-columns: minmax(30rem, auto) 1fr;
+    grid-template-rows: minmax(2rem, auto) 1fr;
+    width: 100%;
+    &__title {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      font-size: 6rem;
+    }
+    &__content {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    &__side-bar {
+      display: flex;
+      margin-left: 4rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      display: block;
+    }
+    &__side-bar-img {
+      width: 25rem;
+    }
   }
 }
 </style>

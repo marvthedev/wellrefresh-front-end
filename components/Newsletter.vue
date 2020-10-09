@@ -42,7 +42,7 @@
         </div>
       </div>
       <img
-        src="../assets/images/health-care.png"
+        src="~/assets/images/health-care.png"
         alt="Subscribe for healthy tips"
         class="newsletter__social-img"
       />

@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="article__ad">
-      <img src="../assets/images/ad.png" class="article__ad-img" />
+      <img src="../assets/images/dummy-ad.jpg" class="article__ad-img" />
     </div>
   </section>
 </template>
