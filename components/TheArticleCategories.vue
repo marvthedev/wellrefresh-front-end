@@ -26,12 +26,14 @@
   &-container {
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr;
-    overflow: hidden;
-    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   &-item {
+    margin-top: 1rem;
     display: flex;
+    width: 100%;
     flex-direction: column;
     border: 0.1rem solid #dadada;
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
@@ -59,7 +61,7 @@
     &-author {
       margin-top: 1rem;
       font-size: 1.6rem;
-      color:#B4B4B4;
+      color: #b4b4b4;
       font-size: 1.2rem;
     }
     &-excerpt {
@@ -75,8 +77,11 @@
     &-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-gap: 3rem;
     }
     &-item {
+      margin-top: 0;
+      height: 100%;
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
       &:hover {
         box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);

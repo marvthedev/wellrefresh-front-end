@@ -3,7 +3,7 @@ import { TRUE } from "node-sass";
 export default {
   env: {
     strapiBaseUri: process.env.API_URL || "http://localhost:1337",
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || "http://localhost:3000"
   },
   /*
    ** Headers of the page
@@ -19,8 +19,8 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
         href:
@@ -116,6 +116,6 @@ export default {
   },
 
   server: {
-    port: 80 // default: 3000
+    port: 3000 // default: 3000
   }
 };
