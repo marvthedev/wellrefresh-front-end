@@ -98,8 +98,8 @@
       <p class="footer__copyright-txt">
         &copy; wellrefresh | Website design by
         <span
-          ><a href="https://www.devvelox.com" class="footer__copyright-dev"
-            >devvelox</a
+          ><a href="https://www.marvthe.dev" class="footer__copyright-dev"
+            >marvthedev</a
           >.</span
         >
       </p>

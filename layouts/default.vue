@@ -1,4 +1,9 @@
 <template>
+<!--
+	wellrefresh by marvthedev
+	https://www.marvthe.dev | @marvthedev
+  Website design and graphics by Marvin Marinas
+-->
   <div>
     <navBar />
     <div class="wrapper">
