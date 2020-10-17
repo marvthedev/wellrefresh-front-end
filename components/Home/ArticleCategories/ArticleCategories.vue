@@ -36,7 +36,7 @@
     width: 100%;
     flex-direction: column;
     border: 0.1rem solid #dadada;
-    box-shadow: 0 2px 4px rgba(1, 14, 40, 0.05);
+    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
     transition: all 0.2s ease;
     border-radius: 1rem;
     &-txt-container {

@@ -49,11 +49,10 @@ export default {
 .article {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 5rem;
   &__title {
     font-weight: 900;
     font-size: 3.4rem;
-    text-align: center;
     margin-bottom: 3.5rem;
   }
   &__side-bar {
