@@ -90,18 +90,43 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Modal',
+  head: {
+    bodyAttrs: {
+      class: "overFlow"
+    }
+  },
+  data() {
+    //Click action for hamburger menu
+    return {
+      menuOpened: false
+    };
+  },
+  methods: {
+    closeMenu() {
+      this.$set(this, "menuOpened", false);
+    },
+    openMenu() {
+      this.$set(this, "menuOpened", true);
+    }
+  }
+};
+</script>
+
 <style lang="scss">
 .nav {
   position: relative;
   width: 100%;
-  height: 6rem;
+  height: 7.4rem;
   display: flex;
   justify-content: space-between;
   padding: 0 1.8rem;
   align-items: center;
   background: white;
-  border-bottom: 1px solid #dadada;
-  box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.08);
+ 
+  box-shadow: 0 -5px 15px #212121;
   &__search {
     height: 2rem;
     fill: #3e3e3e;
@@ -210,7 +235,7 @@
 @media (min-width: 78rem) {
   .nav {
     margin-top: 0;
-    padding: 4rem 12%;
+    padding: 0 2%;
     align-items: center;
     &__search {
       display: block;
@@ -235,28 +260,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  name: 'Modal',
-  head: {
-    bodyAttrs: {
-      class: "overFlow"
-    }
-  },
-  data() {
-    //Click action for hamburger menu
-    return {
-      menuOpened: false
-    };
-  },
-  methods: {
-    closeMenu() {
-      this.$set(this, "menuOpened", false);
-    },
-    openMenu() {
-      this.$set(this, "menuOpened", true);
-    }
-  }
-};
-</script>

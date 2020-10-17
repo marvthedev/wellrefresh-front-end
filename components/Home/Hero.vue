@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
 .popular {
-  margin-top: 4rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,6 +135,7 @@
 //Media queries Desktop
 @media (min-width: 78rem) {
   .popular {
+    margin-top: 7rem;
     flex-direction: row;
     align-items: flex-start;
     &__title {

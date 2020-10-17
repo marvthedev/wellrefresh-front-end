@@ -38,15 +38,7 @@ export default {
   justify-content: center;
   width: 100%;
   margin-top: 7rem;
-  &__ad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    &-img {
-      height: 60rem;
-    }
-  }
+
   &__article1 {
     display: flex;
     flex-direction: column;
@@ -67,14 +59,17 @@ export default {
       clip-path: polygon(0 0, 97% 0, 97% 90%, 0% 100%);
     }
   }
+
   &__article2-container {
     display: flex;
     flex-direction: column;
   }
+  
   &__article2 {
-    margin: 2rem 0;
+    margin: 1rem 0;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
     height: 100%;
@@ -85,6 +80,16 @@ export default {
     }
     &-img {
       max-width: 40%;
+    }
+  }
+
+  &__ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    &-img {
+      height: 60rem;
     }
   }
 }
@@ -108,7 +113,6 @@ export default {
     }
 
     &__article2 {
-      margin: 2rem 0;
       width: 100%;
       display: flex;
       align-items: center;
