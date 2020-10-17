@@ -31,12 +31,12 @@
     width: 100%;
   }
   &-item {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     width: 100%;
     flex-direction: column;
     border: 0.1rem solid #dadada;
-    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+    box-shadow: 0 2px 4px rgba(1, 14, 40, 0.05);
     transition: all 0.2s ease;
     border-radius: 1rem;
     &-txt-container {
@@ -52,11 +52,11 @@
       height: 20rem;
       object-fit: cover;
       border-radius: 1rem 1rem 0 0;
-      border-bottom: 1rem solid #88ad55;
+      border-bottom: 1rem solid $primary-color;
     }
     &-title {
       font-size: 2.2rem;
-      color: #444444;
+      color: $text-color;
     }
     &-author {
       margin-top: 1rem;
