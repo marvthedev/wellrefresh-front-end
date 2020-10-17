@@ -152,7 +152,7 @@ export default {
         & path {
           fill: white;
           &:hover {
-            fill: #88ad55;
+            fill: $primary-color;
           }
         }
       }
@@ -202,7 +202,7 @@ export default {
     text-align: center;
     height: 100%;
     width: 75vw;
-    background-color: #086972;
+    background-color: $secondary-color;
     transition: all 100ms ease-in-out;
     &-close {
       fill: black;

@@ -64,6 +64,7 @@ export default {
     "@nuxtjs/dotenv",
     "@nuxtjs/apollo",
     "@nuxtjs/markdownit",
+    "@nuxtjs/style-resources",
     [
       "nuxt-mq",
       {
@@ -77,17 +78,23 @@ export default {
       }
     ]
   ],
+  
   markdownit: {
     injected: true,
     linkify: true,
     breaks: true
   },
+
   apollo: {
     clientConfigs: {
       default: {
         httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
       }
     }
+  },
+
+  styleResources: {
+    scss: ["~/assets/scss/variables.scss"]
   },
   /*
    ** Axios module configuration

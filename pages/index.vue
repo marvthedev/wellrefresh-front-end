@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  color: #444444;
+  color: $text-color;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
@@ -56,7 +56,6 @@ b,
 strong,
 h2 {
   font-weight: 900;
-  color: #3e3e3e;
 }
 
 a {

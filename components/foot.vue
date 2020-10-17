@@ -242,7 +242,7 @@ $newsletter__font-color: #dadada;
       color: $newsletter__font-color;
       text-decoration: underline;
       &:hover {
-        color: #88ad55;
+        color: $primary-color;
       }
     }
   }
