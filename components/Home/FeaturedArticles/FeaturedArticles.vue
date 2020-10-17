@@ -76,9 +76,10 @@ export default {
     height: 100%;
     cursor: pointer;
     &-title {
-      font-weight: 700;
+      font-weight: 900;
       margin-left: 2rem;
       color: $text-color;
+      font-size: 2rem;
     }
     &-img {
       max-width: 40%;
