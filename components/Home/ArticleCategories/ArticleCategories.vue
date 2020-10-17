@@ -92,9 +92,9 @@
 </style>
 
 <script>
-import fitnessArticles from "@/components/Articles/FitnessArticles";
-import weightLossArticles from "@/components/Articles/WeightLossArticles";
-import dietArticles from "@/components/Articles/DietArticles";
+import fitnessArticles from "@/components/Home/ArticleCategories/FitnessArticles";
+import weightLossArticles from "@/components/Home/ArticleCategories/WeightLossArticles";
+import dietArticles from "@/components/Home/ArticleCategories/DietArticles";
 
 export default {
   components: {

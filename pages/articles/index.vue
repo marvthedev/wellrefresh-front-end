@@ -21,6 +21,32 @@
   </article>
 </template>
 
+<script>
+import articlesQuery from "~/apollo/queries/article/Article";
+import featured1 from "~/components/Articles/Featured1";
+import featured2 from "~/components/Articles/Featured2";
+
+export default {
+  components: {
+    featured1,
+    featured2
+  },
+  data() {
+    return {
+      api_url: process.env.strapiBaseUri,
+      articles: [],
+      query: ""
+    };
+  },
+  apollo: {
+    articles: {
+      prefetch: true,
+      query: articlesQuery
+    }
+  }
+};
+</script>
+
 <style lang="scss">
 .articles {
   display: flex;
@@ -145,29 +171,3 @@
   }
 }
 </style>
-
-<script>
-import articlesQuery from "~/apollo/queries/article/Article";
-import featured1 from "~/components/Featured/Featured1";
-import featured2 from "~/components/Featured/Featured2";
-
-export default {
-  components: {
-    featured1,
-    featured2
-  },
-  data() {
-    return {
-      api_url: process.env.strapiBaseUri,
-      articles: [],
-      query: ""
-    };
-  },
-  apollo: {
-    articles: {
-      prefetch: true,
-      query: articlesQuery
-    }
-  }
-};
-</script>

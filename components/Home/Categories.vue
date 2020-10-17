@@ -2,21 +2,21 @@
   <section class="categories">
     <div class="categories__item">
       <img
-        src="../assets/images/fitness-for-weight-loss.svg"
+        src="~/assets/images/fitness-for-weight-loss.svg"
         class="categories__item-img"
       />
       <h2 class="categories__item-title">Fitness</h2>
     </div>
     <div class="categories__item">
       <img
-        src="../assets/images/weight-loss.svg"
+        src="~/assets/images/weight-loss.svg"
         class="categories__item-img"
       />
       <h2 class="categories__item-title">Nutrition</h2>
     </div>
     <div class="categories__item">
       <img
-        src="../assets/images/wellness-to-improve-health.svg"
+        src="~/assets/images/wellness-to-improve-health.svg"
         class="categories__item-img"
       />
       <h2 class="categories__item-title">Wellness</h2>

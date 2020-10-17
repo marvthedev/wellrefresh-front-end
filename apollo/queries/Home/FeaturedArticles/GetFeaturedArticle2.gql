@@ -1,0 +1,13 @@
+query getFeaturedArticle2 {
+  category(id: 5) {
+    id
+    articles  {
+      title
+      slug
+      id
+      image {
+        url
+      }
+    }
+  }
+}

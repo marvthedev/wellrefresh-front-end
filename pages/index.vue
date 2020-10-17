@@ -1,27 +1,27 @@
 <template>
   <div>
-    <Hero />
-    <Categories />
-    <Articles />
-    <Newsletter />
-    <ArticleCategories />
+    <hero />
+    <categories />
+    <featuredArticles />
+    <newsletter />
+    <articleCategories />
   </div>
 </template>
 
 <script>
-import Hero from "@/components/TheHero";
-import Categories from "@/components/Categories";
-import Articles from "@/components/TheArticles";
-import Newsletter from "@/components/Newsletter";
-import ArticleCategories from "@/components/TheArticleCategories";
+import hero from "~/components/Home/Hero";
+import categories from "~/components/Home/Categories";
+import featuredArticles from "@/components/Home/FeaturedArticles/FeaturedArticles";
+import newsletter from "@/components/Home/Newsletter";
+import articleCategories from "~/components/Home/ArticleCategories/ArticleCategories";
 
 export default {
   components: {
-    Hero,
-    Categories,
-    Articles,
-    Newsletter,
-    ArticleCategories
+    hero,
+    categories,
+    featuredArticles,
+    newsletter,
+    articleCategories
   },
 };
 </script>

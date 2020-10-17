@@ -27,6 +27,7 @@
 <script>
 import dietArticlesQuery from "~/apollo/queries/article/getDietArticles";
 
+
 export default {
   data() {
     return {
