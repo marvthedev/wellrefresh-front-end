@@ -27,13 +27,7 @@ export default {
           "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       }
     ],
-    script: [
-      {
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        "data-ad-client": "ca-pub-2768317130784894",
-        async: true
-      }
-    ]
+    script: [],
   },
   /*
    ** Customize the progress-bar color
@@ -76,7 +70,10 @@ export default {
           lg: Infinity
         }
       }
-    ]
+    ],
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-2768317130784894'
+    }]
   ],
   
   markdownit: {
