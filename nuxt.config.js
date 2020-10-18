@@ -3,7 +3,6 @@ import { TRUE } from "node-sass";
 export default {
   env: {
     strapiBaseUri: process.env.API_URL || "http://localhost:1337",
-    baseUrl: process.env.BASE_URL || "http://localhost:3000"
   },
   /*
    ** Headers of the page
@@ -72,7 +71,7 @@ export default {
       }
     ],
     ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-2768317130784894'
+      id: 'ca-pub-7993280062780124'
     }]
   ],
   
